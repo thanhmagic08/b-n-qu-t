@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;
+}
+
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+
+
+
+
+#banner {
+    width: 90%;
+    background-image :url("/unnamed.png");
+    height: 500px;
+    margin: top 100px;px;
+    display: flex;
+    padding:90px 150px;
+    position:relative;
+}
+
+#banner .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner  .box-left h2 {
+    font-size:48px;
+    margin-top:75px;
+    color:#faf9f9;
+}
+
+#banner .box-left p {
+    color:#948383ec;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#948888;
+    border:none;
+    outline:none;
+    color:#604e4e;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+}
+
+#banner .box-left button:hover {
+    background:rgba(255, 251, 0, 0.378);
+}
+
+#banner .box-right {
+    padding-left:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img {
+    margin:0px 10px;
+    animation :animation 3s infinite linear; 
+}
+
+
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.to-bottom {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+
+#wp-products {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#557c6d;
+}
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 290px;
+    height: 374px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+#list-products .item .stars {
+
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color:#b07878;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+#list-products .item .desc {
+    text-align: center;
+    color:#65c29e;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#f42424;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+#saleoff {
+    width: 100%;
+    display: flex;
+    height: 322px;
+}
+#saleoff .box-left ,#saleoff .box-right {
+    width: 50%;
+}
+#saleoff .box-left {
+    background:#4e7e4e;
+    text-align: center;
+    min-height: 322px;
+}
+
+#saleoff .box-left h1 {
+    padding-top:38px;
+}
+#saleoff .box-left span:nth-child(1)
+{
+    color:#fff;
+    font-size:50px;
+}
+
+#saleoff .box-left span:nth-child(2)
+{
+    color:orange;
+    font-size:150px;
+}
+
+#saleoff .box-right {
+    background-image:url("/images\ \(10\).jpg");
+}
+
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#4b9579;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#d37b7b;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:#312727;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:#151212;
+   
+}
+
+#footer {
+    width: 100%;
+    background:rgba(130, 84, 84, 0.79);
+    height: 322px;
+    margin-top:338px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#491111;
+}
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgb(108, 93, 93);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#675a5a;
+}
+nav {
+    background-color: #121010;
+    padding: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .menu > li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu > li > a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    padding: 20px 30px;
+    display: inline-block;
+  }
+  
+  .menu > li > a:hover {
+    background-color: #e7bbbb;
+  }
+  
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: none; /* Ẩn menu con ban đầu */
+    z-index: 1000;
+  }
+  
+  .dropdown > li > a {
+    color: rgb(115, 94, 94);
+    text-decoration: none;
+    padding: 30px 40px;
+    display: block;
+  }
+  
+  .dropdown > li > a:hover {
+    background-color: #baa4a4;
+  }
+  
+  /* Hiển thị menu con khi hover vào phần tử cha */
+  .menu > li:hover .dropdown {
+    display: block;
+  }   
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Giống màu nền logo */
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px; /* Kích thước ảnh logo */
+    height: 100px;
+    border-radius: 50%; /* Bo tròn nếu cần */
+    background-image: url(/d00fc9bd-c7b1-45ba-85ad-a9c2ca60f0a8.webp);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.contact-input {
+    width: 150%; /* Hoặc một giá trị cụ thể như 300px */
+    height: 60px; /* Điều chỉnh chiều cao theo ý muốn */
+    padding: 30px; /* Tăng khoảng cách bên trong */
+    font-size: 20px; /* Điều chỉnh kích thước chữ */
+}
+.contact-buttons {
+    position: fixed;
+    bottom: 20px; /* Cách cạnh dưới màn hình */
+    right: 20px;  /* Cách cạnh phải màn hình */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    z-index: 1000; /* Đảm bảo các nút ở trên cùng */
+}
+
+.contact-button {
+    width: 60px; /* Độ rộng nút */
+    height: 60px; /* Chiều cao nút */
+    background-color: #fff; /* Màu nền */
+    border-radius: 50%; /* Bo tròn nút */
+    display: flex;
+    align-items: center; /* Căn giữa icon theo chiều dọc */
+    justify-content: center; /* Căn giữa icon theo chiều ngang */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng hover */
+    text-decoration: none; /* Xóa gạch dưới link */
+}
+
+.contact-button img {
+    width: 50%; /* Kích thước icon */
+    height: auto;
+}
+
+.contact-button:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Màu sắc riêng cho từng nút */
+.contact-button.phone {
+    background-color: #f44336; /* Màu đỏ */
+}
+
+.contact-button.zalo {
+    background-color: #1e88e5; /* Màu xanh dương */
+}
+
+.contact-button.scroll-top {
+    background-color: #d32f2f; /* Màu đỏ sẫm */
+}
+
+
